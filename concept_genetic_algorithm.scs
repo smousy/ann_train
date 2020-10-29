@@ -1,0 +1,43 @@
+concept_genetic_algorithm<-sc_node_not_relation;;
+
+concept_genetic_algorithm=>nrel_main_idtf:
+[генетический алгоритм](*<-lang_ru;;*);
+[genetic algotithm](*<-lang_en;;*);;
+
+
+concept_genetic_algorithm<- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+      [Опр. Генетический алгоритм] (* <- lang_ru;; *);;
+=> nrel_using_constants: 
+	{
+		concept_heuristic_algorithm;
+		concept_task;
+		nrel_natural_selection
+	};; 
+<= nrel_sc_text_translation: ... 
+		(*
+			->rrel_example:
+			[Генетческий алгоритм — это <b><sc_element sys_idtf="concept_heuristic_algorithm">эвристический алгоритм</b> поиска, используемый для решения <b><sc_element sys_idtf="concept_task">задач</b> оптимизации и моделирования путём случайного подбора, комбинирования и вариации искомых параметров с использованием механизмов, аналогичных <b><sc_element sys_idtf="nrel_natural_selection">естественному отбору</b> в природе.](*<- lang_ru;;=>nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
+concept_genetic_algorithm<- rrel_key_sc_element: ... 
+(*
+ => nrel_main_idtf:
+[Утв. 1 о генетическом алгоритме] (* <- lang_ru;; *);;
+=> nrel_using_constants: 
+	{
+		concept_neural_network;
+		nrel_weighting_factor
+	};; 
+ <= nrel_sc_text_translation: ...
+	 (*
+    	  -> rrel_example:
+		[Наиболее приемлемым способом настройки <b><sc_element sys_idtf="nrel_weighting_factor">весовых коэффициентов</b> искусственных <b><sc_element sys_idtf="concept_neural_network">нейронных сетей</b> можно считать генетические алгоритмы.](*<-lang_ru;;=>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_genetic_algorithm<-rrel_explored_concept: section_subject_domain_of_learning_neural_networks;;
