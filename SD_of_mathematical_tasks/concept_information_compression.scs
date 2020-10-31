@@ -1,0 +1,52 @@
+concept_information_compression
+=>nrel_inclusion:concept_mathematical_tasks;
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[сжатие информации](*<-lang_ru;;*);
+[information compression](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=> nrel_main_idtf: [Опр. (сжатие информации)](*<- lang_ru;;*);;
+
+=> nrel_using_constants:
+{ 
+	algorithmic_data_conversion;
+	concept_decrease_in_dimension;
+	nrel_volume_of_data
+};;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example:
+		[Сжатие информации — <b><sc_element sys_idtf="algorithmic_data_conversion">алгоритмическое преобразование данных</b> (кодирование), при котором за счет<b><sc_element sys_idtf="concept_decrease_in_dimension"> уменьшения их избыточности</b> уменьшается их <b><sc_element sys_idtf="nrel_volume_of_data">обьём</b>.]
+(*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+
+*);
+
+<-rrel_key_sc_element:...
+(*
+=> nrel_main_idtf: 
+	[Утв. 1 (сжатие информации)](*<- lang_ru;;*);;
+
+=> nrel_using_constants:
+	{
+		information_source_model;
+		method
+	};;
+<= nrel_sc_text_translation: ...
+			(*->rrel_example:[В основе любого <b><sc_element sys_idtf="method">способа</b> сжатия информации лежит <b><sc_element sys_idtf="information_source_model">модель источника информации</b>.](*<-lang_ru;; =>nrel_format: format_html;;*);;
+			*);;
+
+
+*);
+
+->rrel_example:some_information;
+
+=>nrel_inclusion:method;
+
+<-rrel_explored_concept: section_subject_domain_of_mathematical_tasks;;
+
+
