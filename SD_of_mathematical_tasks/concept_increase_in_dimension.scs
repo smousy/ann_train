@@ -28,7 +28,7 @@ concept_increase_in_dimension
 <- rrel_key_sc_element: ... 
 (*
  => nrel_main_idtf:
-[Утв. 1 о увелечение в размере.] (* <- lang_ru;; *);;
+[Утв. 1 (увелечение в размере)] (* <- lang_ru;; *);;
  <= nrel_sc_text_translation: ...
 	 (*
     	  -> rrel_example:
