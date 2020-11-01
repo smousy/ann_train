@@ -1,0 +1,59 @@
+concept_Q_learning
+
+	<-sc_node_not_relation;
+
+	=>nrel_main_idtf:
+		[Q-обучение](*<-lang_ru;;*);
+		[Q-learning](*<-lang_en;;*);
+		
+	=>nrel_idtf:
+		[Q-обучение](*<-lang_ru;;*);
+		[Q-learning](*<-lang_ru;;*);;
+
+
+concept_Q_learning
+	<- rrel_key_sc_element: ...
+	(*
+		<- definition;;
+		
+		=> nrel_main_idtf:
+    			[Определение (Q-обучение)] (* <- lang_ru;; *);;
+    		  
+		=> nrel_using_constants: 
+			{
+				data;
+				condition;
+				neural_network;
+				reward
+			};;
+			
+		<= nrel_sc_text_translation: ... 
+		(*
+			->rrel_example:
+				[Метод машинного обучения, при котором происходит <b><sc_element sys_idtf="neural_element"> обучение модели</b>, которая не имеет сведений о системе, но имеет возможность производить какие-лио действия в ней. Действия переводят систему в новое состояние и модель получает от системы некоторое вознаграждение.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+concept_Q_learning
+	<- rrel_key_sc_element: ... 
+	(*
+		=> nrel_main_idtf:
+			[Утверждение о Q-обучении] (* <- lang_ru;; *);;
+			
+ 		<= nrel_sc_text_translation: ...
+		(*
+    			-> rrel_example:
+				[Q-обучение в состоянии сравнить ожидаемую полезность доступных действий, не формирую модели окружающей среды.](*<-lang_ru;; =>nrel_format: format_html;;*);;
+		*);;
+		
+		=> nrel_using_constants:
+			{
+				data;
+				neural_network;
+				expected_utility_of_available_actions
+			};;
+	*);;
+
+
+concept_neural_network_layer <-rrel_explored_concept: section_subject_domain_of_layers;;
