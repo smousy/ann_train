@@ -1,11 +1,11 @@
-nrel_sinaps
+nrel_synaps
 =>nrel_main_idtf:
 	[синапс*]
 	(* <- lang_ru;; *);
 	
 ///////////////////////////////////////////////////////////////////////////
 	<-rrel_key_sc_element: 
-	Definition_of_sinaps
+	Definition_of_synaps
 		(*
 			<-definition;;
 			<=nrel_sc_text_translation:...
@@ -23,12 +23,12 @@ nrel_sinaps
 		=>nrel_main_idtf:[Опр. (синапс*)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->temporary_connection;sc_arc_membership;concept_sinaps;;
+				->temporary_connection;sc_arc_membership;concept_synaps;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	=>nrel_first_domain:set;
-	=> nrel_second_domain:concept_sinaps;
+	=> nrel_second_domain:concept_synaps;
 <- sc_node_norole_relation;
 <- oriented_relation;
 <- antireflexive_relation;
